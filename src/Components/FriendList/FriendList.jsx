@@ -1,8 +1,9 @@
 import FriendCard from "./FriendCard.jsx";
+import css from './FriendList.module.css'
 
 const FriendList = ({friends}) => {
 	return (
-		<ul className="friendList">
+		<ul className={css.friendList}>
 			{friends.map((friend) => {
 				return (
 					<FriendCard
