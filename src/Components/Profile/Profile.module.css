@@ -3,8 +3,6 @@
     border: 2px solid #000;
     border-radius: 15px;
     padding-top: 20px;
-    /*padding-left: 20px;*/
-    /*padding-right: 20px;*/
     overflow: hidden;
 
     display: flex;
@@ -14,7 +12,3 @@
     color: #242424;
     width: 500px;
 }
-
-/*.profile img{*/
-/*    height: 60px;*/
-/*}*/

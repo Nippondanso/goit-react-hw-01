@@ -7,7 +7,6 @@ import friendData from "../../friendsData.json";
 import userData from '../../userData.json';
 import transactionData from '../../transactionData.json';
 
-
 function App() {
 	
 	return (

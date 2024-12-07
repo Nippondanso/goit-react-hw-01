@@ -1,8 +1,9 @@
 import TransactionLine from "./TransactionLine.jsx";
+import css from "./TransactionHistory.module.css";
 
 const TransactionHistory = ({transactions}) => {
 	return (<>
-			{transactions && transactions.length > 0 && <table>
+			{transactions && transactions.length > 0 && <table className={css.table}>
 				<thead>
 				<tr>
 					<th>Type</th>
@@ -13,16 +14,6 @@ const TransactionHistory = ({transactions}) => {
 				
 				<tbody>
 				{transactions.map(transaction => (<TransactionLine {...transaction} key={transaction.id}/>))}
-				{/*<tr>*/}
-				{/*	<td>Invoice</td>*/}
-				{/*	<td>125</td>*/}
-				{/*	<td>USD</td>*/}
-				{/*</tr>*/}
-				{/*<tr>*/}
-				{/*	<td>Withdrawal</td>*/}
-				{/*	<td>85</td>*/}
-				{/*	<td>USD</td>*/}
-				{/*</tr>*/}
 				</tbody>
 			</table>}
 		</>
