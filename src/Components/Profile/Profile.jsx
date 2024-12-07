@@ -1,10 +1,11 @@
 import React from "react";
+import css from './Profile.module.css'
 import MainInfo from "./MainInfo/MainInfo.jsx";
 import Details from "./Details/Details.jsx";
 
-export const Profile = ({name, tag, location, avatar: image, stats}) => {
+export const Profile = ({username: name, tag, location, avatar: image, stats}) => {
 	return (
-		<div className="profile">
+		<div className={css.profile}>
 			<MainInfo
 				name={name}
 				image={image}

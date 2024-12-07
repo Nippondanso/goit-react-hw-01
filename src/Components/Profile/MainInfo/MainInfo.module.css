@@ -1,0 +1,26 @@
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*gap: 1rem;*/
+}
+
+.img {
+    border-radius: 50%;
+    height: 250px;
+    background-color: #242424;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.tag, .location  {
+color: gray;
+    font-size: 30px;
+}
+
+/*.location {*/
+
+/*}*/

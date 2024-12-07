@@ -1,15 +1,16 @@
-import React from "react";
+import css from './MainInfo.module.css'
 
 const MainInfo = ({image, name, location, tag}) => {
 	return (
-		<div>
+		<div className={css.mainInfo}>
 			<img
+				className={css.img}
 				src={image}
 				alt={name}
 			/>
-			<p>{name}</p>
-			<p>@{tag}</p>
-			<p>{location}</p>
+			<p className={css.name}>{name}</p>
+			<p className={css.tag}>@{tag}</p>
+			<p className={css.location}>{location}</p>
 		</div>
 	)
 }
