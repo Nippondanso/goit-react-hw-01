@@ -1,10 +1,10 @@
-import css from './FriendCard.module.css';
+import css from './FriendListItem.module.css';
 
 const setStatus = (isOnline) => {
 	return isOnline ? css.online : css.offline
 }
 
-const FriendCard = ({avatar, name, isOnline, id}) => {
+const FriendListItem = ({avatar, name, isOnline, id}) => {
 	return (
 		<div key={id} className={css.friendCard}>
 			<img src={avatar} alt={name} width="48"/>
@@ -14,4 +14,4 @@ const FriendCard = ({avatar, name, isOnline, id}) => {
 	)
 }
 
-export default FriendCard;
+export default FriendListItem;
